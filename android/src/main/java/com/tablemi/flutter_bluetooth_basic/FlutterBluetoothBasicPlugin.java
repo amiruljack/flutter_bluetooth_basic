@@ -215,7 +215,7 @@ public class FlutterBluetoothBasicPlugin implements FlutterPlugin, MethodCallHan
             threadPool.addSerialTask(new Runnable() {
                 @Override
                 public void run() {
-                    DeviceConnFactoryManager.getDeviceConnFactoryManagers()[id].openPort()
+                    DeviceConnFactoryManager.getDeviceConnFactoryManagers()[id].openPort();
                 }
             });
 
